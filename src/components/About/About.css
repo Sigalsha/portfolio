@@ -1,0 +1,8 @@
+@import "../../styles/colors.css";
+@import "../../styles/sizes.css";
+@import "../../styles/typography.css";
+
+.about-main-wrapper {
+  display: flex;
+  align-items: center;
+}

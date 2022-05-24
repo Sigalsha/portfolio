@@ -2,7 +2,8 @@
 @import "../../../styles/sizes.css";
 @import "../../../styles/typography.css";
 
-logo {
-  display: block;
-  max-width: 100%;
+.logo {
+  height: 20%;
+  width: 15vw;
+  position: absolute;
 }

@@ -6,10 +6,11 @@ import {
   faHome,
   faMobileRetro
 } from "@fortawesome/free-solid-svg-icons";
+import "./Navbar.css";
 
 const Navbar = () => {
   return (
-    <nav>
+    <nav className="navbar-wrapper">
       <a href="#" className="nav-link">
         <FontAwesomeIcon icon={faHome} />
         Home

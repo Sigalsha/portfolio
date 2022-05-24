@@ -1,0 +1,9 @@
+@import "../../../styles/colors.css";
+
+.contact-info-wrapper {
+  display: inline-flex;
+}
+
+.contact-link:hover {
+  cursor: pointer;
+}

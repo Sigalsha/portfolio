@@ -1,0 +1,8 @@
+@import "../../styles/colors.css";
+
+.header-container {
+  grid-area: h;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
