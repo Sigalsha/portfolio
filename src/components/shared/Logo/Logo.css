@@ -1,0 +1,8 @@
+@import "../../../styles/colors.css";
+@import "../../../styles/sizes.css";
+@import "../../../styles/typography.css";
+
+logo {
+  display: block;
+  max-width: 100%;
+}
