@@ -4,7 +4,8 @@ import {
   faAddressCard,
   faBriefcase,
   faHome,
-  faMobileRetro
+  faLaptopCode,
+  faSquarePhone
 } from "@fortawesome/free-solid-svg-icons";
 import "./Navbar.css";
 
@@ -19,12 +20,16 @@ const Navbar = () => {
         <FontAwesomeIcon icon={faAddressCard} />
         About
       </a>
+      <a href="#skills" className="nav-link">
+        <FontAwesomeIcon icon={faLaptopCode} />
+        Tech Skills
+      </a>
       <a href="#projects" className="nav-link">
         <FontAwesomeIcon icon={faBriefcase} />
         Projects
       </a>
       <a href="#contact" className="nav-link">
-        <FontAwesomeIcon icon={faMobileRetro} />
+        <FontAwesomeIcon icon={faSquarePhone} />
         Contact
       </a>
     </nav>

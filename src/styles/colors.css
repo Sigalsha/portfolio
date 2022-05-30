@@ -3,6 +3,43 @@
 
   --clr-bg: #0e1212;
   --clr-bg-line: 14, 18, 18;
+  --clr-back-2: #1f2028;
+  --clr-li: rgba(63, 0, 113, 0.1);
+  --clr-li2: rgb(97, 0, 148);
+
+  --clr-txt: #dbdbdb;
+
+  /* pallet 1 */
+  /*
+    #1c0c5b
+    #3d2c8d
+    #916bbf
+    #c996cc
+
+  /* pallet 2 */
+  /*
+    #000000
+    #150050
+    #3f0071
+    #610094
+  */
+
+  /* pallet 3 */
+  /*
+    rgba(219, 216, 227, 1)
+    rgba(92, 84, 112, 1)
+    rgba(53, 47, 68, 1)
+    rgba(42, 36, 56, 1)
+  */
+
+  /* pallet 4 */
+  /*
+    rgba(21, 21, 21, 1)
+    rgba(48, 27, 63, 1)
+    rgba(60, 65, 92, 1)
+    rgba(180, 165, 165, 1)
+  */
+
   /*   --clr-green: rgb(76, 175, 80);
   --clr-green-back: rgba(76, 175, 80, 0.5);
   --clr-yellow: #ffcc70;

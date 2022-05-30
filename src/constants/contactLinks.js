@@ -1,8 +1,8 @@
-import linkedin from "../assets/linkedin.svg";
+import linkedin from "../assets/linkedin_icon.svg";
 import github from "../assets/github.svg";
-import email from "../assets/email.svg";
+import email from "../assets/mail.svg";
 
-export const contactLinks = [
+export const CONTACT_LINKS = [
   {
     id: 1,
     name: "linkedin",

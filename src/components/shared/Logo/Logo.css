@@ -3,7 +3,6 @@
 @import "../../../styles/typography.css";
 
 .logo {
-  height: 20%;
-  width: 15vw;
-  position: absolute;
+  /*   height: 3rem;
+  position: absolute; */
 }

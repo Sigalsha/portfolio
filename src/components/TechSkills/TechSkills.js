@@ -1,47 +1,23 @@
 import React, { useState } from "react";
-import { techSkills } from "../../constants/techSkills";
+import { TECH_SKILLS } from "../../constants/techSkills";
+import Title from "../shared/Title";
 import "./TechSkills.css";
 
 const TechSkills = () => {
-  const { frontend, backend, tools } = techSkills;
+  const { frontend, backend, tools } = TECH_SKILLS;
   return (
     <div className="tech-container">
-      <header className="tech-header">
-        <h1>tech skills</h1>
-      </header>
-      <div className="tech-skills-wrapper">
-        Frontend:
-        {frontend.map((skill) => {
+      <Title title="Tech Skills" />
+      <ul className="tech-skills-wrapper">
+        {TECH_SKILLS.map((skill) => {
           return (
-            <div className="skill-card" key={skill.id}>
+            <li className="skill-card" key={skill.id}>
               <img src={skill.img} alt={`${skill.name}-logo`} />
-              {skill.name}
-            </div>
+              <p>{skill.name}</p>
+            </li>
           );
         })}
-      </div>
-      <div className="tech-skills-wrapper">
-        Backend:
-        {backend.map((skill) => {
-          return (
-            <div className="skill-card" key={skill.id}>
-              <img src={skill.img} alt={`${skill.name}-logo`} />
-              {skill.name}
-            </div>
-          );
-        })}
-      </div>
-      <div className="tech-skills-wrapper">
-        Tools:
-        {tools.map((skill) => {
-          return (
-            <div className="skill-card" key={skill.id}>
-              <img src={skill.img} alt={`${skill.name}-logo`} />
-              {skill.name}
-            </div>
-          );
-        })}
-      </div>
+      </ul>
     </div>
   );
 };

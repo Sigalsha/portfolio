@@ -3,6 +3,20 @@
 @import "../../styles/typography.css";
 
 .about-main-wrapper {
+  width: 80%;
+  margin: 0 auto;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+}
+
+.about-container {
+  width: 45%;
+  margin: 0 auto;
+}
+
+.about-desc {
+  padding-top: 2vh;
+  font-size: 1.2em;
+  line-height: 2;
+  letter-spacing: 0.025em;
 }
