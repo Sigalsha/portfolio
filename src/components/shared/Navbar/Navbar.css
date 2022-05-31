@@ -3,17 +3,3 @@
   margin-left: auto;
   padding: 0.5rem;
 }
-
-.nav-link {
-  padding: 1rem;
-}
-
-.nav-link:hover {
-  border-radius: 5px;
-  background-color: var(--clr-li);
-  box-shadow: 0px 3px 5px #00000024;
-}
-
-.nav-link svg {
-  padding-right: 0.5rem;
-}

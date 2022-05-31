@@ -75,3 +75,8 @@ li {
     "f f f";
   border: 1px solid goldenrod;
 }
+
+.main-container {
+  grid-area: m;
+  padding-top: 5vh;
+}
