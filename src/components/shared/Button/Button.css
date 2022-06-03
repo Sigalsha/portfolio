@@ -1,8 +1,10 @@
 .shared-btn {
   padding: 0.5rem 1rem;
   border-radius: 5px;
-  background-color: lightgreen;
+  /* background-color: lightgreen; */
   font-size: 1.2em;
+  min-width: 10vw;
+  color: var(--clr-txt);
 }
 
 .shared-btn svg {

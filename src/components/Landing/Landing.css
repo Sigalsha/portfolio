@@ -1,6 +1,9 @@
+@import "../../styles/colors.css";
+
 .landing-container {
   text-align: center;
   letter-spacing: 0.05em;
+  margin-top: 2rem;
 }
 
 .landing-intro {
@@ -9,9 +12,11 @@
 
 .landing-title {
   font-size: 4.5em;
+  color: var(--clr-brand);
 }
 
 .landing-sub-title {
   font-size: 3.5em;
   margin-bottom: 5vh;
+  color: #695e93;
 }

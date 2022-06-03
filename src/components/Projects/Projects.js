@@ -1,5 +1,8 @@
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import React, { useState } from "react";
 import { PROJECTS } from "../../constants/projects";
+import LinkRoute from "../shared/LinkRoute/LinkRoute";
 import Button from "../shared/Button";
 import Title from "../shared/Title";
 import "./Projects.css";
@@ -36,15 +39,30 @@ const Projects = () => {
         {selectedProjects.map((pro) => {
           return (
             <li className="project-card" key={pro.id}>
-              <h3>{pro.name}</h3>
-              {/*    <img
+              <div className="project-img-cover"></div>
+              <div className="project-title">
+                <h3>{pro.name}</h3>
+              </div>
+              <img
                 className="project-img"
                 src={pro.img}
                 alt={`${pro.name}-logo`}
-              /> */}
+              />
               <div className="project-meta-data">
-                {pro.livePath && <a href={pro.livePath}>view live</a>}
-                {pro.githubPath && <a href={pro.githubPath}>github</a>}
+                {pro.livePath && (
+                  <LinkRoute
+                    to={pro.livePath}
+                    name="Live"
+                    icon={faArrowUpRightFromSquare}
+                  />
+                )}
+                {pro.githubPath && (
+                  <LinkRoute
+                    to={pro.githubPath}
+                    name="Github"
+                    icon={faGithub}
+                  />
+                )}
               </div>
             </li>
           );

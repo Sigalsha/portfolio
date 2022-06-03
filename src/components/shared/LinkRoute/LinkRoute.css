@@ -1,16 +1,22 @@
 @import "../../../styles/colors.css";
 
 .link {
-  background-color: lightgray;
+  /* background-color: lightgray; */
   padding: 0.5rem;
   margin-left: 2vw;
   border-radius: 5px;
 }
 
+.btn-like {
+  padding: 1rem;
+  display: inline-flex;
+  align-items: center;
+}
+
 .link:hover {
   opacity: 0.8;
   border-radius: 5px;
-  background-color: var(--clr-li);
+  background: linear-gradient(to bottom right, #7954a1, #603f8b);
   box-shadow: 0px 3px 5px #00000024;
 }
 
@@ -24,6 +30,15 @@
   padding-right: 0.5rem;
 }
 
+.right {
+  padding-left: 0.5rem;
+  font-size: 1.2em;
+}
+
 .link-title {
   font-size: 14px;
+}
+
+.link-title-btn {
+  font-size: 1.2em;
 }

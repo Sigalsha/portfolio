@@ -1,13 +1,15 @@
 :root {
   /* layout */
 
-  --clr-bg: #0e1212;
-  --clr-bg-line: 14, 18, 18;
-  --clr-back-2: #1f2028;
+  /*   --clr-bg: #0e1212;
+  --clr-bg-line: 14, 18, 18; */
+  --clr-back: rgb(31, 32, 40);
+  --clr-txt: rgb(215, 212, 221);
   --clr-li: rgba(63, 0, 113, 0.1);
   --clr-li2: rgb(97, 0, 148);
+  --clr-brand: rgb(145, 107, 191);
 
-  --clr-txt: #dbdbdb;
+  --clr-txt: rgb(219, 219, 219);
 
   /* pallet 1 */
   /*

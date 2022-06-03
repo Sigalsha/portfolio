@@ -5,12 +5,20 @@
   align-items: center;
   justify-content: center;
   padding: 1rem;
+  background-color: #695e9321;
 }
 
-.footer-container svg {
-  padding-right: 0.5rem;
+.footer-copyright {
+  font-size: 0.7em;
+  padding-right: 0.5vw;
 }
 
 .footer-logo {
-  height: 2.5rem;
+  font-size: 0.8em;
+  margin-right: 1vw;
+}
+
+.footer-logo img {
+  width: 2vw;
+  height: 5vh;
 }

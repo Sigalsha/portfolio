@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import { NAV_LINKS } from "../../../constants/links";
-import LinkRoute from "../Link/Link";
+import LinkRoute from "../LinkRoute/LinkRoute";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -14,7 +14,6 @@ const Navbar = () => {
             name={link.name}
             icon={link.icon}
             key={link.id}
-            isLogo={false}
           />
         );
       })}

@@ -1,15 +1,18 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCopyright } from "@fortawesome/free-solid-svg-icons";
-import footerLogo from "../../assets/logo-title.png";
+import Logo from "../../components/shared/Logo";
+import footerLogo from "../../assets/computer-internet-woman.svg";
 import "./Footer.css";
 
 const Footer = () => {
   return (
     <div className="footer-container">
-      <FontAwesomeIcon icon={faCopyright} />
+      <span className="footer-logo">
+        <Logo />
+      </span>
+      <FontAwesomeIcon icon={faCopyright} className="footer-copyright" />
       Developed by Sigal Shalit Manor 2022
-      <img className="footer-logo" src={footerLogo} alt="footer-logo" />
     </div>
   );
 };

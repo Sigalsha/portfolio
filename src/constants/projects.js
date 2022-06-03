@@ -1,8 +1,10 @@
-import crm from "../assets/projects/crm.png";
-import wordPlay from "../assets/projects/word_play.png";
-import reflix from "../assets/projects/reflix.png";
-import braveryMedia from "../assets/projects/bravery_media.png";
-import myFreedom from "../assets/projects/my_freedom.png";
+import crm from "../assets/projects/crm_ilus.jpg";
+import wordPlay from "../assets/projects/word-play-ilus.jpg";
+import reflix from "../assets/projects/reflix-ilus.jpg";
+import braveryMedia from "../assets/projects/bravery_media_ilus.jpg";
+import myFreedom from "../assets/projects/my_freedom_ilus.jpg";
+import BHProject from "../assets/projects/bh_project_ilus.jpg";
+import hangmanGame from "../assets/projects/hangman_game_ilus.jpg";
 
 export const PROJECTS = {
   personal: [
@@ -30,7 +32,7 @@ export const PROJECTS = {
     {
       id: 4,
       name: "Hangman Game",
-      img: "",
+      img: hangmanGame,
       livePath: "",
       githubPath: "https://github.com/Sigalsha/hangman-game"
     }
@@ -52,8 +54,8 @@ export const PROJECTS = {
     },
     {
       id: 7,
-      name: "She codes- BH project",
-      img: "",
+      name: "She Codes - Beit Hatfutsot",
+      img: BHProject,
       livePath: "",
       githubPath: "https://github.com/Sigalsha/She-codes-BH-Project/tree/client"
     }

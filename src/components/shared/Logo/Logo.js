@@ -1,9 +1,14 @@
 import React, { useState } from "react";
-import logo from "../../../assets/my_logo.png";
+import logo from "../../../assets/computer-internet-woman.svg";
 import "./Logo.css";
 
 const Logo = () => {
-  return <img className="logo" src={logo} alt="logo" />;
+  return (
+    <p className="logo">
+      Sigal
+      <img src={logo} alt="logo" />
+    </p>
+  );
 };
 
 export default Logo;

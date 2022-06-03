@@ -13,3 +13,7 @@ export const NAV_LINKS = [
   { id: 4, to: "/projects", name: "Projects", icon: faBriefcase },
   { id: 5, to: "/contact", name: "Contact", icon: faSquarePhone }
 ];
+
+/* export const GENERAL_LINKS = [
+  {to: '/About', }
+] */
