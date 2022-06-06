@@ -11,6 +11,13 @@
 
   --clr-txt: rgb(219, 219, 219);
 
+  /* card */
+  --clr-card-shad: 5px 5px 15px rgb(1 1 1 / 80%);
+  --clr-card-back: rgba(105, 94, 147, 0.3);
+
+  /* hover */
+  --clr-back-hover: linear-gradient(rgb(96, 63, 139) 65%, rgb(121, 84, 161));
+
   /* pallet 1 */
   /*
     #1c0c5b

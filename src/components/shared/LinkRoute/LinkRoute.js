@@ -7,7 +7,10 @@ import "./LinkRoute.css";
 const LinkRoute = (props) => {
   const location = useLocation();
   return (
-    <Link className={`link ${props.isBtnLike ? "btn-like" : ""}`} to={props.to}>
+    <Link
+      className={`link ${props.isBtnLike ? "btn-like" : props.className || ""}`}
+      to={props.to}
+    >
       {props.children}
       {props.icon && !props.isBtnLike && (
         <FontAwesomeIcon className="link-icon" icon={props.icon} />

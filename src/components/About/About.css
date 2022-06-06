@@ -3,20 +3,50 @@
 @import "../../styles/typography.css";
 
 .about-main-wrapper {
-  width: 80%;
-  margin: 0 auto;
+  padding: 0 2rem;
   display: flex;
   flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
 }
 
 .about-container {
-  width: 45%;
-  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2rem;
 }
 
 .about-desc {
-  padding-top: 2vh;
-  font-size: 1.2em;
-  line-height: 2;
-  letter-spacing: 0.025em;
+  display: inline-flex;
+  align-items: center;
+  padding: 1.2rem;
+  font-size: 0.9em;
+  line-height: 1.5;
+  letter-spacing: 0.07em;
+  box-shadow: var(--clr-card-shad);
+  background-color: var(--clr-card-back);
+  border-radius: 5px;
+}
+
+.about-desc:nth-child(1),
+.about-desc:nth-child(3) {
+  width: 28%;
+}
+
+.about-desc:nth-child(2) {
+  width: 36%;
+}
+
+.about-desc:nth-child(4) {
+  width: 35%;
+  margin-left: auto;
+}
+
+.about-desc:nth-child(5) {
+  width: 35%;
+  margin-right: auto;
+}
+
+.about-desc:last-child {
+  margin: 0 auto;
 }

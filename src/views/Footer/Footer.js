@@ -8,11 +8,14 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <div className="footer-container">
-      <span className="footer-logo">
+      <span className="footer-logo footer-left">
         <Logo />
       </span>
       <FontAwesomeIcon icon={faCopyright} className="footer-copyright" />
       Developed by Sigal Shalit Manor 2022
+      <span className="footer-logo footer-right">
+        <Logo />
+      </span>
     </div>
   );
 };

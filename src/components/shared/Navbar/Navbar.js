@@ -14,6 +14,7 @@ const Navbar = () => {
             name={link.name}
             icon={link.icon}
             key={link.id}
+            className="left-space"
           />
         );
       })}

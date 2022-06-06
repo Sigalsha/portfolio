@@ -1,12 +1,19 @@
+@import "../../../styles/colors.css";
+
 .shared-btn {
-  padding: 0.5rem 1rem;
+  padding: 1.5vh 0;
   border-radius: 5px;
-  /* background-color: lightgreen; */
   font-size: 1.2em;
-  min-width: 10vw;
+  width: 8rem;
   color: var(--clr-txt);
+  border: 2px solid #603f8b;
 }
 
 .shared-btn svg {
   padding-left: 0.5rem;
+}
+
+.shared-btn:hover {
+  background: var(--clr-back-hover);
+  box-shadow: 0px 3px 5px #00000024;
 }
