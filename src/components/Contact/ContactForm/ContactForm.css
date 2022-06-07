@@ -1,0 +1,22 @@
+@import "../../../styles/colors.css";
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.2rem;
+  align-items: center;
+  color: var(--clr-txt);
+}
+
+.contact-input {
+  width: 30vw;
+  border-radius: 5px;
+  padding: 0.5rem;
+  resize: none;
+  border: 1px solid rgb(219, 219, 219);
+}
+
+textarea {
+  min-height: 20vh;
+}
