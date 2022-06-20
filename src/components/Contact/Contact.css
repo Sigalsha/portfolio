@@ -13,3 +13,9 @@
   align-items: center;
   justify-content: space-evenly;
 }
+
+.with-alert {
+  flex-direction: column-reverse;
+  gap: 3rem;
+  margin-top: 2rem;
+}

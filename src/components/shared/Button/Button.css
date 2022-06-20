@@ -1,12 +1,14 @@
 @import "../../../styles/colors.css";
 
 .shared-btn {
-  padding: 1.5vh 0;
+  padding: 0.9rem 0;
   border-radius: 5px;
   font-size: 1.2em;
-  width: 8rem;
+  width: 10rem;
   color: var(--clr-txt);
-  border: 2px solid #603f8b;
+  border: 3px solid #603f8b;
+  /* background-color: rgba(105, 94, 147, 0.5); */
+  letter-spacing: 0.05em;
 }
 
 .shared-btn svg {

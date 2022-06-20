@@ -9,14 +9,17 @@
   --clr-li2: rgb(97, 0, 148);
   --clr-brand: rgb(145, 107, 191);
 
-  --clr-txt: rgb(219, 219, 219);
+  /* --clr-txt: rgb(219, 219, 219); */
 
   /* card */
   --clr-card-shad: 5px 5px 15px rgb(1 1 1 / 80%);
-  --clr-card-back: rgba(105, 94, 147, 0.3);
+  --clr-card-back: rgba(105, 94, 147, 0.6);
 
   /* hover */
   --clr-back-hover: linear-gradient(rgb(96, 63, 139) 65%, rgb(121, 84, 161));
+
+  /* success */
+  --clr-success: rgb(92, 184, 92);
 
   /* pallet 1 */
   /*

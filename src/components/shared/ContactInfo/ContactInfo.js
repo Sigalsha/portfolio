@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { CONTACT_LINKS } from "../../../constants/contactLinks";
 import "./ContactInfo.css";
 
-const ContactInfo = () => {
+const ContactInfo = ({ className }) => {
   return (
-    <div className="contact-info-wrapper">
+    <div className={`${className ? className : ""} contact-info-wrapper`}>
       {CONTACT_LINKS.map((link) => {
         return (
           <a className="contact-link" href={link.path} key={link.id}>

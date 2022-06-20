@@ -12,6 +12,7 @@ import About from "./components/About";
 import TechSkills from "./components/TechSkills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import ScrollToTop from "./hooks/ScrollToTop";
 import "./App.css";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
     <Router>
       <div className="App">
         <Header />
+        <ScrollToTop />
         <div className="main-container">
           <Routes>
             <Route path="/" element={<Landing />} />

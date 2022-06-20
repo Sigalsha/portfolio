@@ -1,10 +1,38 @@
-import React from "react";
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
+import Button from "../../shared/Button";
+import Alert from "../../shared/Alert";
 import "./ContactForm.css";
 
-const ContactForm = () => {
+const ContactForm = ({ handleSubmitContactForm }) => {
+  const form = useRef();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(e.target);
+    emailjs
+      .sendForm(
+        "service_ro8wu2v",
+        "template_bjzulut",
+        form.current,
+        "oRgRLGEYziipt67gK"
+      )
+      .then(
+        (result) => {
+          console.log(result);
+          handleSubmitContactForm(true, true);
+        },
+        (error) => {
+          console.log(error.text);
+          handleSubmitContactForm(true, false);
+        }
+      );
+    e.target.reset();
+  };
+
   return (
-    <form className="contact-form">
-      <label for="name"></label>
+    <form ref={form} className="contact-form" onSubmit={handleSubmit}>
+      <label htmlFor="name"></label>
       <input
         className="contact-input"
         type="text"
@@ -14,7 +42,7 @@ const ContactForm = () => {
         id="name"
         required
       />
-      <label for="email"></label>
+      <label htmlFor="email"></label>
       <input
         className="contact-input"
         type="email"
@@ -24,16 +52,16 @@ const ContactForm = () => {
         id="email"
         required
       />
-      <label for="textMessage"></label>
+      <label htmlFor="message"></label>
       <textarea
         className="contact-input"
-        name="textMessage"
+        name="message"
         placeholder="your message"
         autoComplete="off"
         id="message"
         required
       />
-      <button type="submit">send message</button>
+      <Button type="submit" btnTxt="send" />
     </form>
   );
 };

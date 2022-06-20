@@ -8,15 +8,24 @@
   gap: 2rem;
 }
 
+.contact-page-info {
+  gap: 3rem;
+  flex-direction: column;
+  margin-top: 0;
+}
+
 .contact-link {
   padding: 1rem;
   box-shadow: 0px 3px 5px #00000024;
   border-radius: 5px;
-  background-color: rgba(96 63 139 / 30%);
+  background-color: rgba(145, 107, 191, 0.6);
 }
 
 .contact-link:hover {
   cursor: pointer;
+  box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.5);
+  /* box-shadow: 0px 10px 20px 5px rgba(82, 60, 109, 0.623); */
+  transform: translateY(-4px);
 }
 
 .contact-icon {

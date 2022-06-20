@@ -4,19 +4,39 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 1.2rem;
+  gap: 2vh;
   align-items: center;
   color: var(--clr-txt);
+  min-width: 30vw;
 }
 
 .contact-input {
-  width: 30vw;
+  width: 100%;
   border-radius: 5px;
   padding: 0.5rem;
-  resize: none;
-  border: 1px solid rgb(219, 219, 219);
+  resize: both;
+  color: var(--clr-txt);
+  border: 1px solid #603f8b;
+  background: none;
+  outline: none;
+}
+
+.contact-input::placeholder {
+  font-family: "Nunito", sans-serif;
+  font-size: larger;
+  letter-spacing: 0.05em;
+}
+
+.contact-input:focus {
+  border-width: 3px;
 }
 
 textarea {
   min-height: 20vh;
+}
+
+button[type="submit"] {
+  width: 100%;
+  margin-top: 2vh;
+  text-transform: uppercase;
 }

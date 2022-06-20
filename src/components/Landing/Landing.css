@@ -4,6 +4,7 @@
   text-align: center;
   letter-spacing: 0.05em;
   margin-top: 2rem;
+  scroll-behavior: smooth;
 }
 
 .landing-intro {
