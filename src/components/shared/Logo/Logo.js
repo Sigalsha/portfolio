@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import logo from "../../../assets/computer-internet-woman.svg";
+import logo from "../../../assets/about/about_logo.png";
 import "./Logo.css";
 
-const Logo = () => {
+const Logo = ({ isFooter }) => {
   return (
     <p className="logo">
       Sigal
-      <img src={logo} alt="logo" />
+      {!isFooter && <img src={logo} alt="logo" />}
     </p>
   );
 };

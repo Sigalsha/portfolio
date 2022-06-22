@@ -6,6 +6,11 @@
   justify-content: center;
   padding: 1rem;
   background-color: rgba(105, 94, 147, 0.129);
+  /*   position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 8vh; */
 }
 
 .footer-copyright {
@@ -14,18 +19,6 @@
 }
 
 .footer-logo {
-  font-size: 0.7em;
-}
-
-.footer-left {
-  margin-right: 3vw;
-}
-
-.footer-right {
-  margin-left: 3vw;
-}
-
-.footer-logo img {
-  width: 1.5vw;
-  height: 4.5vh;
+  font-size: 0.8em;
+  margin-right: 1.5vw;
 }

@@ -1,14 +1,16 @@
 import React, { useState } from "react";
-import { useLocation, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import "./LinkRoute.css";
 
 const LinkRoute = (props) => {
-  const location = useLocation();
+  console.log(props);
   return (
     <Link
-      className={`link ${props.isBtnLike ? "btn-like" : props.className || ""}`}
+      className={`link ${props.isBtnLike ? "btn-like" : props.className || ""}${
+        props.isActive ? " active-link" : ""
+      }`}
       to={props.to}
     >
       {props.children}
@@ -30,4 +32,4 @@ const LinkRoute = (props) => {
 };
 
 export default LinkRoute;
-// isActiveRoute={props.to === location.pathname}
+//

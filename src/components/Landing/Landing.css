@@ -21,3 +21,22 @@
   margin-bottom: 5vh;
   color: #695e93;
 }
+
+@media screen and (max-width: 800px) {
+  .landing-title {
+    font-size: 4em;
+  }
+
+  .landing-sub-title {
+    font-size: 2.8em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+}
+
+@media screen and (max-width: 500px) {
+}
+
+@media screen and (max-width: 415px) {
+}

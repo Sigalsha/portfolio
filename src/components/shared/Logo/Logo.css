@@ -6,13 +6,13 @@
   display: flex;
   align-items: center;
   gap: 0.25rem;
-  font-size: 1.3em;
+  font-size: 1.5em;
   font-family: "Carter One", cursive;
   letter-spacing: 0.08em;
   color: #7954a1;
 }
 
 .logo img {
-  width: 1.2rem;
-  padding-bottom: 0.5rem;
+  height: 2.5rem;
+  padding-bottom: 0.25rem;
 }

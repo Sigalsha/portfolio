@@ -39,3 +39,19 @@
   height: 5vh;
   margin-bottom: 2vh;
 }
+
+@media screen and (min-width: 1230px) {
+  .tech-container {
+    padding: 0 5rem;
+  }
+
+  .tech-skills-wrapper {
+    padding: 2rem 5rem;
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  .tech-container {
+    padding: var(--pd-media-l);
+  }
+}

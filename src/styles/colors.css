@@ -17,6 +17,11 @@
 
   /* hover */
   --clr-back-hover: linear-gradient(rgb(96, 63, 139) 65%, rgb(121, 84, 161));
+  /* active */
+  --clr-back-active: linear-gradient(
+    rgba(96, 63, 139, 0.6),
+    rgba(121, 84, 161, 0.6)
+  );
 
   /* success */
   --clr-success: rgb(92, 184, 92);

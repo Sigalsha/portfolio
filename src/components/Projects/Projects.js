@@ -10,30 +10,47 @@ import "./Projects.css";
 const Projects = () => {
   const allProjects = [...PROJECTS["personal"], ...PROJECTS["volunteer"]];
   const [selectedProjects, setSelectedProjects] = useState(allProjects);
+  const [activeProjectsBtn, setActiveProjectsBtn] = useState("All");
 
   const handleClick = (projectsType) => {
     switch (projectsType) {
       case "All":
         setSelectedProjects(allProjects);
+        setActiveProjectsBtn("All");
         break;
       case "Personal":
         setSelectedProjects(PROJECTS["personal"]);
+        setActiveProjectsBtn("Personal");
         break;
       case "Volunteer":
         setSelectedProjects(PROJECTS["volunteer"]);
+        setActiveProjectsBtn("Volunteer");
         break;
       default:
         setSelectedProjects(allProjects);
+        setActiveProjectsBtn("All");
     }
   };
 
   return (
-    <div className="projects-container">
+    <div className="page-container">
       <Title title="Projects" />
       <section className="projects-btn-wrapper">
-        <Button btnTxt="All" onClick={() => handleClick("All")} />
-        <Button btnTxt="Personal" onClick={() => handleClick("Personal")} />
-        <Button btnTxt="Volunteer" onClick={() => handleClick("Volunteer")} />
+        <Button
+          btnTxt="All"
+          onClick={() => handleClick("All")}
+          isActive={activeProjectsBtn === "All"}
+        />
+        <Button
+          btnTxt="Personal"
+          onClick={() => handleClick("Personal")}
+          isActive={activeProjectsBtn === "Personal"}
+        />
+        <Button
+          btnTxt="Volunteer"
+          onClick={() => handleClick("Volunteer")}
+          isActive={activeProjectsBtn === "Volunteer"}
+        />
       </section>
       <ul className="projects-cards-container">
         {selectedProjects.map((pro) => {

@@ -3,7 +3,7 @@ import fire from "../assets/about/flames.svg";
 import responsive from "../assets/about/cross-platform.svg";
 import creative from "../assets/about/creative.svg";
 import code from "../assets/about/code.svg";
-import logo from "../assets/about/about_my_logo.svg";
+import logo from "../assets/about/about_logo.png";
 
 export const ABOUT_TXT = [
   {

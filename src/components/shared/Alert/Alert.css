@@ -20,26 +20,24 @@
   background: var(--clr-back-hover);
 }
 
-.alert-success {
-  color: var(--clr-secondary-text);
-  background-color: var(--clr-alert-success);
-}
-
 .alert-text {
   line-height: var(--lh-15);
-  letter-spacing: 0.05em;
+  letter-spacing: 0.08em;
   display: inline-flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
-.alert-text svg {
-  padding-right: 0.5rem;
+.alert-success {
   font-size: 1.3em;
 }
 
-.alert-text-success {
-  color: var(--clr-secondary-text);
+.alert-text span {
+  font-size: 1.7em;
+}
+
+.alert-text svg {
+  padding-right: 0.5rem;
 }
 
 /* @media screen and (min-width: 1023px) {

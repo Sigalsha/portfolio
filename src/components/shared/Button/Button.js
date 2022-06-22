@@ -2,10 +2,10 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Button.css";
 
-const Button = ({ btnTxt, isWithIcon, iconType, onClick, type }) => {
+const Button = ({ btnTxt, isWithIcon, iconType, onClick, type, isActive }) => {
   return (
     <button
-      className="shared-btn"
+      className={`${isActive ? "shared-btn active-btn" : "shared-btn"}`}
       type={type ? type : "button"}
       onClick={onClick}
     >

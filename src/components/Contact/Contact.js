@@ -28,9 +28,9 @@ const Contact = () => {
   );
 
   return (
-    <div className="contact-container">
+    <div className="page-container">
       <Title title="Let's Connect" />
-      <div className={`${isFormSubmit && "with-alert"} contact-wrapper`}>
+      <div className={`contact-wrapper${isFormSubmit ? " with-alert" : ""}`}>
         <ContactInfo className={`${isFormSubmit ? "" : "contact-page-info"}`} />
         {isFormSubmit ? (
           alertAfterSubmit

@@ -6,7 +6,7 @@ import "./TechSkills.css";
 const TechSkills = () => {
   const { frontend, backend, tools } = TECH_SKILLS;
   return (
-    <div className="tech-container">
+    <div className="page-container">
       <Title title="Tech Skills" />
       <ul className="tech-skills-wrapper">
         {TECH_SKILLS.map((skill) => {
