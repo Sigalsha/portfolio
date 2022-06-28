@@ -36,6 +36,23 @@
 }
 
 @media screen and (max-width: 500px) {
+  .landing-container {
+    padding: 0 1rem;
+  }
+
+  .landing-intro {
+    font-size: 1.1em;
+  }
+
+  .landing-title {
+    font-size: 2.5em;
+    padding-top: 1rem;
+  }
+
+  .landing-sub-title {
+    font-size: 1.8em;
+    padding-top: 1rem;
+  }
 }
 
 @media screen and (max-width: 415px) {

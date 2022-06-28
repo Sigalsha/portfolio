@@ -22,3 +22,36 @@
   font-size: 0.8em;
   margin-right: 1.5vw;
 }
+
+@media screen and (max-width: 500px) {
+  .footer-container {
+    padding: 0.5rem;
+    font-size: 0.9em;
+  }
+
+  .footer-logo {
+    margin-right: 2.5vw;
+  }
+
+  .footer-copyright {
+    font-size: 0.85em;
+    padding-right: 1vw;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .footer-logo {
+    margin-right: 3.5vw;
+  }
+
+  .footer-copyright {
+    padding-right: 2vw;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .footer-container {
+    font-size: 0.75em;
+    max-width: 100%;
+  }
+}

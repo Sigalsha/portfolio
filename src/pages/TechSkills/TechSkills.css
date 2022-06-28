@@ -142,6 +142,7 @@
 @media screen and (max-width: 500px) and (min-height: 800px) {
   .tech-skills-wrapper {
     grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+    padding-bottom: 1rem;
   }
 
   .skill-card {
@@ -149,22 +150,39 @@
   }
 
   .skill-card img {
-    height: 5vh;
+    height: 4.5vh;
   }
 }
 
 @media screen and (max-width: 400px) {
   .tech-skills-wrapper {
-    grid-template-columns: repeat(auto-fill, minmax(85px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
     grid-column-gap: 2.5rem;
+    padding: 0 2rem 2rem 2rem;
   }
 
   .skill-card {
     font-size: 0.8em;
     height: calc(100vh * 0.12);
+    padding: 1rem;
   }
 
   .skill-card img {
-    height: 5vh;
+    margin-bottom: 1vh;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .tech-skills-wrapper {
+    grid-column-gap: 1.5rem;
+    padding: 0 1rem 1rem 1rem;
+  }
+
+  .skill-card {
+    height: calc(100vh * 0.14);
+  }
+
+  .skill-card img {
+    height: 6vh;
   }
 }

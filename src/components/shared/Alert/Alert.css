@@ -40,71 +40,21 @@
   padding-right: 0.5rem;
 }
 
-/* @media screen and (min-width: 1023px) {
-  .alert-wrapper {
-    left: 25%;
-    top: 30%;
-    width: var(--w-50);
-    height: var(--h-40);
+@media screen and (max-width: 500px) {
+  .alert-container {
+    padding: 1rem;
   }
 
-  .alert-text {
-    font-size: 2.2em;
-    margin: var(--m-auto);
-    padding: 0;
-  }
-}
-
-@media screen and (max-width: 900px) {
-
-
-  .alert-text {
-    font-size: var(--fs-basis-m3);
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .alert-wrapper {
-    left: 15%;
-    top: 35%;
-    width: var(--w-70);
-    height: var(--h-30);
-    padding: var(--pd-2);
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .alert-text {
-    font-size: 1.4em;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .alert-wrapper {
-    left: 10%;
-    width: 80%;
+  .alert-fail {
+    max-width: 60vw;
+    font-size: 0.9em;
   }
 
-  .alert-text {
-    font-size: var(--fs-basis-m2);
+  .alert-success {
+    font-size: 1.1em;
   }
-}
 
-@media screen and (max-width: 415px) {
-  .alert-wrapper {
-    left: 5%;
-    top: 40%;
-    width: var(--w-90);
-    height: 20%;
-    padding: var(--pd-5);
-  }
-  
-  .alert-text {
+  .alert-text span {
     font-size: 1.3em;
   }
-
-  .alert-text svg {
-    padding-right: 5px;
-  }
 }
- */

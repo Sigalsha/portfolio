@@ -1,12 +1,13 @@
-import React, { useState } from "react";
-import { useLocation, Link } from "react-router-dom";
-
+import React, { useContext } from "react";
+import { useLocation } from "react-router-dom";
+import { MenuContext } from "../../contexts/MenuContext";
 import { NAV_LINKS } from "../../constants/links";
 import LinkRoute from "../shared/LinkRoute/LinkRoute";
 import "./Navbar.css";
 
 const Navbar = (props) => {
   const { pathname } = useLocation();
+  const { onMenuClick } = useContext(MenuContext);
 
   return (
     <nav
@@ -27,6 +28,7 @@ const Navbar = (props) => {
             }
             isSideNav={props.isOpen}
             className={props.isOpen ? "s-nav-link" : " left-space"}
+            onClick={() => onMenuClick()}
           />
         );
       })}

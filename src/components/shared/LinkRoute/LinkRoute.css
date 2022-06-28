@@ -76,3 +76,27 @@
     font-size: 1em;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .s-nav-icon {
+    font-size: 1em;
+  }
+
+  .s-nav-link-title {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .s-nav-link {
+    padding: 0.5rem;
+  }
+
+  .s-nav-icon {
+    font-size: 0.95em;
+  }
+
+  .s-nav-link-title {
+    font-size: 1em;
+  }
+}

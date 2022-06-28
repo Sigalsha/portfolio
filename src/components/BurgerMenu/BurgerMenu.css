@@ -69,3 +69,17 @@
     margin: 20px;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .burger-menu-line {
+    width: 8vw;
+  }
+
+  .close-burger-menu {
+    width: 100%;
+  }
+
+  .menu-active {
+    margin: 0;
+  }
+}

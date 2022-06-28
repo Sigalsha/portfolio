@@ -121,22 +121,33 @@
     width: unset;
     margin: 0 auto;
     padding: 0.5rem;
+    gap: 0.5rem;
+  }
+
+  .heart {
+    height: 1.3rem;
   }
 }
 
 @media screen and (max-width: 400px) {
   .about-wrapper {
-    gap: 2.5rem;
+    gap: 2rem;
+    margin-bottom: 3vh;
   }
 
   .about-item {
     gap: 1rem;
     line-height: unset;
-    font-size: 1em;
+    font-size: 0.9em;
   }
 
   .about-item:last-of-type {
     font-size: 1.1em;
-    letter-spacing: 0.025em;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .about-wrapper {
+    font-size: 0.85em;
   }
 }

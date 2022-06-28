@@ -12,6 +12,7 @@ const LinkRoute = (props) => {
         props.isActive ? " active-link" : ""
       }`}
       to={props.to}
+      onClick={props.onClick}
     >
       {props.children}
       {props.icon && !props.isBtnLike && (

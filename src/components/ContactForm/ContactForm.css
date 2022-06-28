@@ -56,3 +56,9 @@ button[type="submit"] {
     width: 22vw;
   }
 }
+
+@media screen and (max-width: 300px) {
+  .contact-form {
+    padding: 0 1rem;
+  }
+}

@@ -40,6 +40,10 @@
     margin-top: 2rem;
   }
 
+  .contact-page-info {
+    margin-top: 0;
+  }
+
   .contact-link {
     padding: 0.7rem;
   }
@@ -47,7 +51,11 @@
 
 @media screen and (max-width: 500px) {
   .contact-info-wrapper {
-    margin-top: 1rem;
+    margin-top: 0;
+  }
+
+  .contact-page-info {
+    margin: 0 0 1rem 0;
   }
 
   .contact-icon {
@@ -57,12 +65,26 @@
 
 @media screen and (max-width: 500px) and (min-height: 800px) {
   .contact-info-wrapper {
-    margin: 2rem 0 1rem 0;
+    margin: 1rem 0 2rem 0;
+  }
+
+  .contact-page-info {
+    margin: 0 0 1rem 0;
   }
 }
 
 @media screen and (max-width: 400px) {
+  .contact-info-wrapper {
+    margin-top: 0;
+    margin-bottom: 3vh;
+  }
   .contact-link {
     padding: 0.5rem;
   }
 }
+
+/* @media screen and (max-width: 500px) {
+  .contact-info-wrapper {
+    padding-bottom: 2rem;
+  }
+} */
