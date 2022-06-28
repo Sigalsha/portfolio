@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { TECH_SKILLS } from "../../constants/techSkills";
-import Title from "../shared/Title";
+import Title from "../../components/shared/Title";
 import "./TechSkills.css";
 
 const TechSkills = () => {

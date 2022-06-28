@@ -1,7 +1,7 @@
 import React from "react";
 import { ABOUT_TXT } from "../../constants/about";
-import ContactInfo from "../shared/ContactInfo";
-import Title from "../shared/Title";
+import ContactInfo from "../../components/shared/ContactInfo";
+import Title from "../../components/shared/Title";
 import "./About.css";
 
 const About = () => {

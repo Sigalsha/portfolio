@@ -5,34 +5,37 @@ import {
   Route,
   Navigate
 } from "react-router-dom";
-import Header from "./views/Header";
-import Footer from "./views/Footer";
-import Landing from "./components/Landing";
-import About from "./components/About";
-import TechSkills from "./components/TechSkills";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
+import MenuContextProvider from "./contexts/MenuContext";
+import Header from "./layouts/Header";
+import Footer from "./layouts/Footer";
+import Landing from "./pages/Landing";
+import About from "./pages/About";
+import TechSkills from "./pages/TechSkills";
+import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
 import ScrollToTop from "./hooks/ScrollToTop";
 import "./App.css";
 
 function App() {
   return (
     <Router>
-      <div className="App">
-        <Header />
-        <ScrollToTop />
-        <div className="main-container">
-          <Routes>
-            <Route path="/" element={<Landing />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/skills" element={<TechSkills />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="*" element={<Navigate to="/" />} />
-          </Routes>
+      <MenuContextProvider>
+        <div className="App">
+          <Header />
+          <ScrollToTop />
+          <div className="main-container">
+            <Routes>
+              <Route path="/" element={<Landing />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/skills" element={<TechSkills />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="*" element={<Navigate to="/" />} />
+            </Routes>
+          </div>
+          <Footer />
         </div>
-        <Footer />
-      </div>
+      </MenuContextProvider>
     </Router>
   );
 }

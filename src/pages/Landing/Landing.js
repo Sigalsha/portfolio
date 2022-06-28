@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 
 import { faCircleRight } from "@fortawesome/free-solid-svg-icons";
-import Button from "../shared/Button";
-import LinkRoute from "../shared/LinkRoute/LinkRoute";
+import LinkRoute from "../../components/shared/LinkRoute/LinkRoute";
 import "./Landing.css";
 
 const Landing = () => {
@@ -18,6 +17,7 @@ const Landing = () => {
         name="Find Out More"
         icon={faCircleRight}
         isBtnLike="true"
+        className="btn-like"
       />
     </div>
   );

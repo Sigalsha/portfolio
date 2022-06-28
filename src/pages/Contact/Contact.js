@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Title from "../shared/Title";
-import ContactInfo from "../shared/ContactInfo";
-import ContactForm from "./ContactForm/ContactForm";
-import Alert from "../shared/Alert";
+import Title from "../../components/shared/Title";
+import ContactInfo from "../../components/shared/ContactInfo";
+import ContactForm from "../../components/ContactForm/ContactForm";
+import Alert from "../../components/shared/Alert";
 import "./Contact.css";
 
 const Contact = () => {

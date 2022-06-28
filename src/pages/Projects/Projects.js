@@ -2,9 +2,9 @@ import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import React, { useState } from "react";
 import { PROJECTS } from "../../constants/projects";
-import LinkRoute from "../shared/LinkRoute/LinkRoute";
-import Button from "../shared/Button";
-import Title from "../shared/Title";
+import LinkRoute from "../../components/shared/LinkRoute/LinkRoute";
+import Button from "../../components/shared/Button";
+import Title from "../../components/shared/Title";
 import "./Projects.css";
 
 const Projects = () => {
@@ -67,18 +67,24 @@ const Projects = () => {
               />
               <div className="project-meta-data">
                 {pro.livePath && (
-                  <LinkRoute
-                    to={pro.livePath}
-                    name="Live"
-                    icon={faArrowUpRightFromSquare}
-                  />
+                  <>
+                    <LinkRoute
+                      to={pro.livePath}
+                      name="Live"
+                      icon={faArrowUpRightFromSquare}
+                    />
+                    <p className="project-tooltip">Live</p>
+                  </>
                 )}
                 {pro.githubPath && (
-                  <LinkRoute
-                    to={pro.githubPath}
-                    name="Github"
-                    icon={faGithub}
-                  />
+                  <>
+                    <LinkRoute
+                      to={pro.githubPath}
+                      name="Github"
+                      icon={faGithub}
+                    />
+                    <p className="project-tooltip">Github</p>
+                  </>
                 )}
               </div>
             </li>

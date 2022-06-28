@@ -1,0 +1,25 @@
+.navbar-wrapper {
+  margin-left: auto;
+}
+
+@media screen and (max-width: 700px) {
+  .side-navbar {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 3.5rem;
+    left: auto;
+    transition: 0.5s;
+    right: 0;
+    z-index: 2;
+    background-color: var(--clr-back);
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    gap: 0.25rem;
+  }
+
+  .nav-close {
+    display: none;
+  }
+}

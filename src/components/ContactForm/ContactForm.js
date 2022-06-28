@@ -1,7 +1,6 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import Button from "../../shared/Button";
-import Alert from "../../shared/Alert";
+import Button from "../shared/Button";
 import "./ContactForm.css";
 
 const ContactForm = ({ handleSubmitContactForm }) => {

@@ -1,15 +1,19 @@
 import React, { useState } from "react";
 import { useLocation, Link } from "react-router-dom";
 
-import { NAV_LINKS } from "../../../constants/links";
-import LinkRoute from "../LinkRoute/LinkRoute";
+import { NAV_LINKS } from "../../constants/links";
+import LinkRoute from "../shared/LinkRoute/LinkRoute";
 import "./Navbar.css";
 
-const Navbar = () => {
+const Navbar = (props) => {
   const { pathname } = useLocation();
 
   return (
-    <nav className="navbar-wrapper">
+    <nav
+      className={`navbar-wrapper${
+        props.isOpen ? " side-navbar" : " nav-close"
+      }`}
+    >
       {NAV_LINKS.map((link) => {
         return (
           <LinkRoute
@@ -21,7 +25,8 @@ const Navbar = () => {
               `/${link.to}` === pathname ||
               (pathname === "/" && link.to === "home")
             }
-            className="left-space"
+            isSideNav={props.isOpen}
+            className={props.isOpen ? "s-nav-link" : " left-space"}
           />
         );
       })}

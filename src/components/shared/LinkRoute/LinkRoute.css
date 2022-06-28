@@ -20,6 +20,14 @@
   border-color: transparent;
 }
 
+.s-nav-link {
+  padding: 0.75rem;
+}
+
+.left-space {
+  margin-left: 2vw;
+}
+
 .link-icon {
   font-size: 14px;
   padding-right: 0.5rem;
@@ -45,6 +53,19 @@
 
   .btn-like {
     padding: 0.75rem;
+  }
+
+  .s-nav-link {
+    padding: 0.75rem;
+  }
+
+  .s-nav-icon {
+    font-size: 1.2em;
+    padding-right: 1rem;
+  }
+
+  .s-nav-link-title {
+    font-size: 1.3em;
   }
 
   .right {
