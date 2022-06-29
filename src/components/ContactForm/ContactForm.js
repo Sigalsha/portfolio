@@ -11,10 +11,10 @@ const ContactForm = ({ handleSubmitContactForm }) => {
     console.log(e.target);
     emailjs
       .sendForm(
-        "service_ro8wu2v",
-        "template_bjzulut",
+        process.env.REACT_APP_NOT_SERVICE_ID,
+        process.env.REACT_APP_NOT_TEMPLATE_ID,
         form.current,
-        "oRgRLGEYziipt67gK"
+        process.env.REACT_APP_NOT_PUBLIC_KEY
       )
       .then(
         (result) => {

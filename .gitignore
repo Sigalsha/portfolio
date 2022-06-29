@@ -24,3 +24,5 @@ yarn-error.log*
 
 # env
 .env
+.env.staging
+.env.production
