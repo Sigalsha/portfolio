@@ -154,6 +154,13 @@
   }
 }
 
+/* tablet */
+@media screen and (max-width: 901px) and (min-height: 1025px) {
+  .projects-cards-container {
+    grid-template-columns: repeat(3, minmax(17vh, 1fr));
+  }
+}
+
 @media screen and (max-width: 800px) {
   .projects-cards-container {
     grid-gap: 1rem;

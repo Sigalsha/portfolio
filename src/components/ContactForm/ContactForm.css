@@ -41,6 +41,12 @@ button[type="submit"] {
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 1230px) {
+  .contact-form {
+    width: 22vw;
+  }
+}
+
 @media screen and (min-width: 1023px) {
   .contact-form {
     width: 25vw;
@@ -51,9 +57,10 @@ button[type="submit"] {
   }
 }
 
-@media screen and (min-width: 1230px) {
+/* tablet */
+@media screen and (max-width: 901px) and (min-height: 1025px) {
   .contact-form {
-    width: 22vw;
+    min-width: 35vw;
   }
 }
 
