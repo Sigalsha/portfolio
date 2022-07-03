@@ -7,7 +7,6 @@
   gap: 2vh;
   align-items: center;
   color: var(--clr-txt);
-  /*  min-width: 35vw; */
 }
 
 .contact-input {
@@ -31,6 +30,11 @@
   border-width: 3px;
 }
 
+input:focus::placeholder,
+textarea:focus::placeholder {
+  color: transparent;
+}
+
 textarea {
   min-height: 20vh;
 }
@@ -43,13 +47,13 @@ button[type="submit"] {
 
 @media screen and (min-width: 1230px) {
   .contact-form {
-    width: 22vw;
+    width: 16vw;
   }
 }
 
 @media screen and (min-width: 1023px) {
   .contact-form {
-    width: 25vw;
+    width: 18vw;
   }
 
   .contact-input {

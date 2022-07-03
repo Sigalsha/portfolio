@@ -25,7 +25,7 @@ function App() {
           <ScrollToTop />
           <div className="main-container">
             <Routes>
-              <Route path="/" element={<Landing />} />
+              <Route exact path="/" element={<Landing />} />
               <Route path="/about" element={<About />} />
               <Route path="/skills" element={<TechSkills />} />
               <Route path="/projects" element={<Projects />} />

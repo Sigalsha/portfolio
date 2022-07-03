@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-
+import React from "react";
 import { faCircleRight } from "@fortawesome/free-solid-svg-icons";
 import LinkRoute from "../../components/shared/LinkRoute/LinkRoute";
 import "./Landing.css";
@@ -13,10 +12,9 @@ const Landing = () => {
         <h1 className="landing-sub-title">Full Stack Developer</h1>
       </header>
       <LinkRoute
-        to="/About"
+        to="/about"
         name="Find Out More"
         icon={faCircleRight}
-        isBtnLike="true"
         className="btn-like"
       />
     </div>

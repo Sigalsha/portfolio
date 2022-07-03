@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { useLocation } from "react-router-dom";
 import { MenuContext } from "../../contexts/MenuContext";
 import { NAV_LINKS } from "../../constants/links";
-import LinkRoute from "../shared/LinkRoute/LinkRoute";
+import NavbarLink from "./NavbarLink";
 import "./Navbar.css";
 
 const Navbar = (props) => {
@@ -17,7 +17,7 @@ const Navbar = (props) => {
     >
       {NAV_LINKS.map((link) => {
         return (
-          <LinkRoute
+          <NavbarLink
             to={`/${link.to}`}
             name={link.name}
             icon={link.icon}

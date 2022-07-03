@@ -8,7 +8,6 @@ const ContactForm = ({ handleSubmitContactForm }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(e.target);
     emailjs
       .sendForm(
         process.env.REACT_APP_NOT_SERVICE_ID,

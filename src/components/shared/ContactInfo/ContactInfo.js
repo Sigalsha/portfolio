@@ -7,7 +7,13 @@ const ContactInfo = ({ className }) => {
     <div className={`${className ? className : ""} contact-info-wrapper`}>
       {CONTACT_LINKS.map((link) => {
         return (
-          <a className="contact-link" href={link.path} key={link.id}>
+          <a
+            className="contact-link"
+            href={link.path}
+            key={link.id}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img
               className="contact-icon"
               src={link.src}
