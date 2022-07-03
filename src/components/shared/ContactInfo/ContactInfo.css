@@ -33,6 +33,9 @@
 }
 
 @media screen and (min-width: 1023px) {
+  .contact-info-wrapper {
+    margin-top: 2rem;
+  }
 }
 
 @media screen and (max-width: 800px) {
