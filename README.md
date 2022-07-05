@@ -1,1 +1,1 @@
-### Check out :briefcase: [my portfolio](https://github.com/Sigalsha) 	
+### Check out :briefcase: [my portfolio](https://sigalsha.github.io/portfolio/) 	
