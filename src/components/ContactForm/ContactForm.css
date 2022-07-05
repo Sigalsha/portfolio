@@ -42,7 +42,7 @@ textarea {
 button[type="submit"] {
   width: 100%;
   margin-top: 2vh;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 @media screen and (min-width: 1230px) {

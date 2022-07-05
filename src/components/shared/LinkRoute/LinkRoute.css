@@ -36,6 +36,12 @@
 .right {
   padding: 0 0 0 0.5rem;
   font-size: 1.2em;
+  transition: transform 0.4s;
+}
+
+.btn-like:hover .right {
+  transform: rotate(90deg);
+  padding: 0 0.5rem;
 }
 
 .link-title {

@@ -122,6 +122,17 @@
   }
 }
 
+/* tablet */
+@media screen and (max-width: 700px) and (min-height: 900px) {
+  .tech-skills-wrapper {
+    grid-column-gap: 1.5rem;
+  }
+  .skill-card {
+    height: 11vh;
+    font-size: 1em;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .tech-skills-wrapper {
     grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
