@@ -168,20 +168,28 @@
 
 @media screen and (max-width: 400px) {
   .about-wrapper {
-    gap: 2rem;
-    margin-bottom: 5vh;
+    gap: 1.5rem;
   }
 
   .about-item {
     gap: 1rem;
     line-height: unset;
+    font-size: 0.8em;
+  }
+
+  .about-item:last-of-type {
     font-size: 0.9em;
+  }
+
+  .about-desc {
+    font-size: 1.1em;
   }
 }
 
 @media screen and (max-width: 420px) and (min-height: 799px) {
   .about-wrapper {
-    margin-bottom: 10vh;
+    margin-bottom: 5vh;
+    gap: 1.75rem;
   }
 }
 

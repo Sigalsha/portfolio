@@ -14,9 +14,3 @@
   background-color: var(--clr-back);
   box-shadow: 3px 5px 15px #00000045;
 }
-
-@media screen and (max-width: 300px) {
-  .header-container {
-    max-width: 90%;
-  }
-}

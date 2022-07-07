@@ -23,7 +23,6 @@
 .contact-link:hover {
   cursor: pointer;
   box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.5);
-  /* box-shadow: 0px 10px 20px 5px rgba(82, 60, 109, 0.623); */
   transform: translateY(-4px);
 }
 
@@ -79,15 +78,9 @@
 @media screen and (max-width: 400px) {
   .contact-info-wrapper {
     margin-top: 0;
-    margin-bottom: 3vh;
+    margin-bottom: 2vh;
   }
   .contact-link {
-    padding: 0.5rem;
+    padding: 1vh 2vw;
   }
 }
-
-/* @media screen and (max-width: 500px) {
-  .contact-info-wrapper {
-    padding-bottom: 2rem;
-  }
-} */

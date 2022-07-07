@@ -40,8 +40,13 @@
 }
 
 @media screen and (max-width: 400px) {
+  .footer-container {
+    font-size: 0.85em;
+    letter-spacing: 0.025em;
+  }
+
   .footer-logo {
-    margin-right: 3.5vw;
+    font-size: 0.75em;
   }
 
   .footer-copyright {
