@@ -12,7 +12,7 @@ export const PROJECTS = {
       id: 1,
       name: "CRM",
       img: crm,
-      livePath: "https://crm-system-app.herokuapp.com/login",
+      livePath: "https://crm-system-app.herokuapp.com/",
       githubPath: "https://github.com/Sigalsha/CRM-system"
     },
     {
